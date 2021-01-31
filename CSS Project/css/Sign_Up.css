@@ -1,0 +1,284 @@
+/*
+============================================================================================================================================
+    Resets all the default styles of browser. ============================================================================================================================================
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+caption,
+th,
+td {
+	text-align: left;
+	font-weight: normal;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+}
+
+blockquote,
+q {
+	quotes: "" "";
+}
+
+/* ============================================================================================================================================
+    CSS code starting ============================================================================================================================================
+*/
+:root {
+	--text-color: rgb(231, 149, 149);
+	--border-color: rgb(67, 169, 187);
+	--font-family: "Open Sans";
+	--neo-shadow: rgb(203, 206, 208);
+	--neo-bg-color: rgb(236, 240, 243);
+	--margin-length: 30px;
+}
+
+body {
+	background-color: var(--neo-bg-color);
+	font-family: var(--font-family);
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	/* position: absolute; */
+}
+
+.button-box {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 650px;
+	margin: auto;
+}
+
+.login-button,
+.signup-button {
+	width: 100%;
+	margin: 0.5em;
+}
+
+#login-btn,
+#signup-btn {
+	display: block;
+	width: 100%;
+	padding: 1em;
+	border: 0;
+	border-radius: 15px;
+	box-shadow: -6px -6px 6px rgba(255, 255, 255, 0.8),
+		6px 6px 6px rgba(0, 0, 0, 0.2);
+	/* box-shadow: inset -6px -6px 6px rgba(108, 193, 204, 0.8),
+		        inset 6px 6px 6px rgba(133, 194, 179, 0.61); */
+}
+
+.form-box {
+	height: 400px;
+	margin: auto;
+	display: flex;
+}
+
+#login-Box,
+#signUp-Box {
+	display: flex;
+	flex-direction: column;
+	border-radius: 30px;
+	background-color: var(--neo-bg-color);
+
+	width: 650px;
+	padding: 1.2em;
+	margin: 1em;
+	overflow: hidden;
+	box-shadow: -6px -6px 6px rgba(255, 255, 255, 0.8),
+		6px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+#signUp-Box{
+	display: none;
+}
+
+.logo{
+    width:70%;
+    padding:1.2em;
+    margin:0 auto 0.4em auto;
+    
+    text-align:center;
+    font-size:36px;
+    color:green;
+    
+    box-shadow:0px 0px 5px grey;
+}
+
+.neo-input {
+	border: 0;
+	border-radius: 15px;
+	margin-bottom: 0.5em;
+
+	padding: 1em;
+	/* width:auto; */
+	background: none;
+	/* box content styles */
+	font-size: 16px;
+	box-shadow: inset 8px 8px 8px var(--neo-shadow),
+		inset -5px -5px 5px rgb(255, 255, 255);
+}
+input[type="password"]:focus,
+input[type="email"]:focus {
+	font-size: 20px;
+}
+
+.side-by-side-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.side-by-side-container input {
+	width: 40%;
+}
+
+.btn {
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: rgba(26, 141, 93, 0.637);
+	color: white;
+	font-size: large;
+	font-weight: bold;
+
+	width: 60%;
+	margin: 0.8em auto 0 auto;
+	padding: 0.8em;
+	border-radius: 10px;
+
+	box-shadow: 7px 7px 8px rgb(203, 206, 209), -7px -7px 8px rgb(255, 255, 255);
+	transition: 0.5s;
+}
+
+.btn:hover {
+	background-color: rgba(26, 141, 93, 0.904);
+}
+
+.btn:focus{
+    border:5px solid rgb(10, 116, 134);
+}
+
+/* ============================================================================================================================================
+Media Queries of Responsive Webdesign ============================================================================================================================================
+*/
+
+@media only screen and (max-width: 600px) {
+	/* Style for small mobile screens */
+	.button-box {
+		width: 450px;
+	}
+
+	#login-Box,
+	#signUp-Box{
+        width: 450px;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	/* Style for mobile screens */
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	/* Style for tables */
+}
+
+@media only screen and (min-width: 1025px) {
+	/* Style for Large screens like Desktops and TV's */
+}

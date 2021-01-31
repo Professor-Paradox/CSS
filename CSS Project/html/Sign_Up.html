@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Form</title>
+    <link
+        media=""
+        rel="stylesheet"
+        type="text/css"
+        href="../css/Sign_Up.css"
+    >
+</head>
+
+<body>
+    <div class="button-box">
+        <div class="login-button">
+            <button id="login-btn">
+                Login
+            </button>
+        </div>
+        <div class="signup-button">
+            <button id="signup-btn">
+                Signup
+            </button>
+        </div>
+    </div>
+
+    <form action=""></form>
+
+
+    <div class="form-box">
+        <form
+            id="login-Box"
+            method="get"
+        >
+            <div class="logo">Your Logo</div>
+            <input
+                type="email"
+                class="neo-input"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="password"
+                class="neo-input"
+                placeholder="Password"
+                required
+            >
+            <button
+                type="submit"
+                class="btn"
+            >
+                Login
+            </button>
+
+        </form>
+
+        <form
+            id="signUp-Box"
+            action="action.php"
+        >
+            <div class="side-by-side-container">
+                <input
+                    type="text"
+                    autocomplete="off"
+                    id="fName"
+                    placeholder="First Name"
+                    class="neo-input"
+                >
+                <input
+                    type="text"
+                    autocomplete="off"
+                    id="lName"
+                    placeholder="Last Name"
+                    class="neo-input"
+                >
+            </div>
+            <input
+                type="email"
+                autocomplete="off"
+                id="email"
+                placeholder="Email Address"
+                class="neo-input"
+            >
+            <input
+                type="password"
+                autocomplete="off"
+                id="pass1"
+                placeholder="Password"
+                class="neo-input"
+            >
+            <input
+                type="password"
+                autocomplete="off"
+                id="pass2"
+                placeholder="Confirm Password"
+                class="neo-input"
+            >
+            <button
+                type="submit"
+                class="btn"
+            >
+                JOIN
+            </button>
+        </form>
+    </div>
+    <script src="../js/Sign_Up.js"></script>
+
+</body>
+
+
+</html>
